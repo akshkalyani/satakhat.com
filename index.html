@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>satakhat.com - Buy or Sell Property</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet"/>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Inter', sans-serif;
+      background: #f9f9f9;
+      color: #333;
+    }
+    header {
+      background-color: #fff;
+      padding: 20px;
+      border-bottom: 1px solid #eee;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      margin: 0;
+      color: #d83a34;
+    }
+    main {
+      padding: 40px 20px;
+      max-width: 800px;
+      margin: auto;
+    }
+    .hero {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+    .hero h2 {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    .form-card {
+      background: #fff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 16px rgba(0,0,0,0.1);
+    }
+    label {
+      display: block;
+      margin-top: 20px;
+      font-weight: 600;
+    }
+    input, select, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 1rem;
+    }
+    button {
+      margin-top: 24px;
+      padding: 12px 20px;
+      background: #d83a34;
+      color: #fff;
+      border: none;
+      font-weight: bold;
+      border-radius: 8px;
+      cursor: pointer;
+      transition: background 0.3s;
+    }
+    button:hover {
+      background: #c42f2a;
+    }
+    footer {
+      text-align: center;
+      margin-top: 40px;
+      font-size: 0.9rem;
+      color: #777;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>satakhat.com</h1>
+    <nav>Buy | Sell | Contact</nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h2>Post Your Property Easily</h2>
+      <p>Find buyers or sellers in your area — fast, free, and secure.</p>
+    </section>
+
+    <section class="form-card">
+      <form action="https://formspree.io/f/mblyewjb" method="POST">
+        <label for="name">Your Name</label>
+        <input type="text" name="name" required />
+
+        <label for="phone">Mobile Number</label>
+        <input type="tel" name="phone" pattern="[0-9]{10}" required />
+
+        <label for="email">Email Address</label>
+        <input type="email" name="email" required />
+
+        <label for="type">Property Type</label>
+        <select name="type" required>
+          <option value="">-- Select --</option>
+          <option value="buy">I want to Buy</option>
+          <option value="sell">I want to Sell</option>
+          <option value="rent">I want to Rent</option>
+        </select>
+
+        <label for="message">Details or Questions</label>
+        <textarea name="message" rows="5" placeholder="Tell us about the property or your needs..."></textarea>
+
+        <button type="submit">Submit Your Request</button>
+      </form>
+    </section>
+
+    <footer>
+      &copy; 2025 satakhat.com | All rights reserved
+    </footer>
+  </main>
+</body>
+</html>
